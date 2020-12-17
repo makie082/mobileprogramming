@@ -7,13 +7,13 @@ public class Main {
         Report_Subj[] rs = new Report_Subj[4];
         Coding_Subj[] cs = new Coding_Subj[2];
 
-        rs[0] = new Report_Subj("computer structure", 31, 17);
-        rs[1] = new Report_Subj("mobile programming", 20, 17);
-        rs[2] = new Report_Subj("Algorithm", 25, 17);
-        rs[3] = new Report_Subj("understanding of performance arts", 3, 17);
+        rs[0] = new Report_Subj("computer structure", 31, 17, "blue");
+        rs[1] = new Report_Subj("mobile programming", 20, 17, "black");
+        rs[2] = new Report_Subj("Algorithm", 25, 17, "red");
+        rs[3] = new Report_Subj("understanding of performance arts", 3, 17, "purple");
 
-        cs[0] = new Coding_Subj("system programming", 1, 17, "C++");
-        cs[1] = new Coding_Subj("digital circuit", 29, 17, "Python");
+        cs[0] = new Coding_Subj("system programming", 1, 17, "pink","C++");
+        cs[1] = new Coding_Subj("digital circuit", 29, 17, "grey","Python");
 
         for (int i=0; i<rs.length; i++){
             rs[i].print_info();

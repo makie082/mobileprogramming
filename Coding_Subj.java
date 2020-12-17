@@ -1,8 +1,8 @@
 public class Coding_Subj extends Subj {
     int c_dueDate = 0; // 슈퍼 클래스의 필드 중 cnt 대신 coding_cnt 사용
 
-    Coding_Subj(String subjN, int c_dueDate, int today, String lang){
-        super(subjN,c_dueDate, today,lang);
+    Coding_Subj(String subjN, int c_dueDate, int today, String color, String lang){
+        super(subjN,c_dueDate, today,color,lang);
         coding_cnt ++;
     }
 

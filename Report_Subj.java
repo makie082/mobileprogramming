@@ -1,7 +1,7 @@
 public class Report_Subj extends Subj {
     int r_dueDate = 0; // 슈퍼 클래스의 필드 중 cnt 대신 report_cnt 사용
-    Report_Subj(String subjN, int r_dueDate, int today){
-        super(subjN, r_dueDate, today);
+    Report_Subj(String subjN, int r_dueDate, int today, String color){
+        super(subjN, r_dueDate, today, color);
         report_cnt ++;
     }
 

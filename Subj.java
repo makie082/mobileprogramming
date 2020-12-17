@@ -8,23 +8,26 @@ abstract class Subj { // 매장 내 직원과 알바관리
     int dueDate = 0; //제출기한
     int today = 0; //오늘 날짜
     int period = 0; //제출기간까지 남은 날짜
+    String color = "" // 과목별 색상 -> 에뮬레이터로 받아서 색깔 지정해주기
     String lang = ""; // 언어
 
     static int wholeCnt=0; //과제 개수
     static int report_cnt=0;
     static int coding_cnt=0;
 
-    Subj(String subjN, int duedate, int today){
+    Subj(String subjN, int duedate, int today, String color){
         this.subjN = subjN;
         this.dueDate = duedate;
         this.today = today;
+        this.color = color;
         wholeCnt ++;
     }
 
-    Subj(String subjN, int duedate, int today, String lang){
+    Subj(String subjN, int duedate, int today, String color, String lang){
         this.subjN = subjN;
         this.dueDate = duedate;
         this.today = today;
+        this.color = color;
         this.lang = lang;
         wholeCnt ++;
     }
@@ -37,6 +40,7 @@ abstract class Subj { // 매장 내 직원과 알바관리
     String get_subjN(){return subjN;}
     int get_duedate(){return dueDate;}
     int get_today(){return today;}
+    String get_color() {return color;}
     String get_lang(){return lang;}
     int get_period(){ //오늘부로 남은 날짜 알아보기
         period = dueDate-today;
